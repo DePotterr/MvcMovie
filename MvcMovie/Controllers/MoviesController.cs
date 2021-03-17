@@ -102,7 +102,7 @@ namespace MvcMovie.Controllers
                 movie.Genre + "', " +
                 movie.Price + ", '" +
                 movie.Rating + "'" + ")";
-            string connectionString = "Data Source=movieapp.database.windows.net;Initial Catalog=DBMovies;User ID=s112632;Password=xC$a6+Pk;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            string connectionString = "Data Source=movieapp.database.windows.net;Initial Catalog=DBMovies;User ID=s112632;Password=********;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(queryString, connection);
